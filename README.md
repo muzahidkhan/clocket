@@ -1,5 +1,5 @@
 
-# clocket@muZahid
+# new_clocket@muZahid
 Created BY https://github.com/tirtharajsinha/clocket
 
 Clocket is a desklet built for cinnamon DE based on gnome3.
