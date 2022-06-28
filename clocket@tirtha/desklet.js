@@ -133,8 +133,6 @@ class CinnamonClockDesklet extends Desklet.Desklet {
         return iconimage;
     }
 
-
-
     _onCompactPermChange() {
         if (this.compactperm) {
             this._create_compact_label();
@@ -166,12 +164,6 @@ class CinnamonClockDesklet extends Desklet.Desklet {
         }
 
     }
-
-
-
-
-
-
 
     id() {
         if (this.loctype == "city") {
@@ -241,8 +233,6 @@ class CinnamonClockDesklet extends Desklet.Desklet {
         // forecast data loading
 
         baseurl = "http://api.openweathermap.org/data/2.5/forecast?";
-
-
 
         url = baseurl + this.id() + "&appid=" + String(weatherapi) + "&units="+this.unit;
         var jsondata = this.getJSON(url);
@@ -329,9 +319,6 @@ class CinnamonClockDesklet extends Desklet.Desklet {
             this.comtemp.set_text(curdata[1]);
             this.comdes.set_text(curdata[2])
         }
-
-
-
 
 
 
@@ -479,11 +466,11 @@ class CinnamonClockDesklet extends Desklet.Desklet {
         this._date.set_text(date);
 
         var mm = a.getMonth();
-        var month = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+        var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Aep", "Oct", "Nov", "Dec"]
         this._month.set_text("  " + month[mm] + ", " + a.getFullYear());
 
         var dd = a.getDay();
-        var weekday = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         this._week.set_text("   " + weekday[dd]);
 
 
