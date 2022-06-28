@@ -1,6 +1,6 @@
 
 # clocket@muZahid
-Creted bt Tirtha
+Created BY https://github.com/tirtharajsinha/clocket
 
 Clocket is a desklet built for cinnamon DE based on gnome3.
 display time,data and current weather data.<br>
